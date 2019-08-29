@@ -1,32 +1,31 @@
-import random
+from function import *
+from intro import intro_menu
+
+entryPool = []
+paidpool =[]
+
+intro_menu()
+
+while True:
+    option = input("Enter your choice")
+
+if option == 1:
+    entry = input("what entry would you like to capture")
+
+    enter_pool(entry,entryPool)
+
+    
+
+else option == 2:
+        separation(entry,entryPool,paidpool)
+        print("successfully added to paid pool")
 
 
-captured=[56,20,30,40]
-paid = []
-officers = ['nassir','issa']
 
-entry = input("Please Enter captured Entry")
-
-captured.append(entry)
-
-
-
-entry_select = input("Enter Entry")
-
-
-for entry in captured:
-    if entry_select in captured:
-        captured.pop(entry_select)
-
-        paid.append(entry_select)
-
-        officer = random.choice(officers)
-
-        print("entry" + entry_select + "has been allocated " + officer + "officer")
-    else:
-       print("does not exist")
         
-print(captured)
-print(paid)
+
+
+
+
 
 
